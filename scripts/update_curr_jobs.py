@@ -8,7 +8,7 @@ import mysql.connector
 def get_jobs(pp_path,assembly_runid_file):
 	pattern = re.compile("^[A-Za-z]{2}[0-9]{5}.[0-9][A-Za-z]")
 	table=open(assembly_runid_file,'r')
-	table.readline()
+	#table.readline()
 	to_submit = set()
 	
 	for line in table:
